@@ -1,0 +1,106 @@
+body {
+  color: rgb(71, 71, 71);
+  font-family: sans-serif, Arial, sans-serif, Times, serif;
+  line-height: 1, 2;
+  font-size: 12px;
+}
+.glavni-naslov {
+  text-align: center;
+  padding-top: 2px;
+  font-weight: bolder;
+  font-size: large;
+  padding-bottom: none;
+}
+
+.article {
+  font-family: "Times New Roman", Times, serif;
+  display: grid;
+  grid-template-columns: 270px 1fr 1fr;
+  grid-row: 1fr 1fr 1fr;
+  margin-left: 40px;
+  margin-right: 50px;
+  column-gap: 25px;
+  justify-content: end;
+  justify-items: end;
+  padding-bottom: none;
+}
+
+.container {
+  width: 1000px;
+  height: 630px;
+  background-color: #f7eeee;
+  margin: 0 auto;
+  padding-bottom: none;
+}
+
+.datum {
+  border-top: solid black 3px;
+  border-bottom: solid black 3px;
+  margin-top: 0;
+  padding: 10px;
+  font-weight: bolder;
+}
+.citat {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+.flex {
+  display: flex;
+  gap: 10px;
+}
+
+.slika-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.slika {
+  width: 100px;
+  height: 100px;
+}
+
+.opis {
+  margin-top: 5px; /* Opciono: Dodajte razmak između slike i opisa */
+  font-size: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.flex1 {
+  flex: 1; /* Opciono: Ovo će istegnuti drugi dio sadržaja kako bi popunio preostali prostor */
+}
+
+.strong {
+  font-weight: 800;
+  margin-top: 5px;
+}
+
+.drugi_naslov {
+  font-size: 27px;
+  font-family: sans-serif;
+
+  transform: scale(1, 1.5);
+}
+.subheading {
+  font-size: 17px;
+  font-family: sans-serif;
+}
+
+.prvi {
+  justify-self: start;
+}
+
+.border {
+  border-right: solid black 2px;
+  padding-right: 10px;
+}
+
+.prvi {
+  padding-right: 18px;
+}
+
+.emoji {
+  list-style: "☕";
+}
