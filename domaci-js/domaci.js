@@ -196,8 +196,9 @@ function statistikaUspjeha(ucenici) {
   return statistika;
 }
 
-// Sortiranje ucenika po prezimenima
-// Sortiranje ucenika po prezimenima obrnutim redoslijedom
+let statistika = statistikaUspjeha(ucenici);
+console.log(statistika);
+
 function sortirajUcenike(ucenici) {
   for (let i = 0; i < ucenici.length - 1; i++) {
     for (let j = 0; j < ucenici.length - 1 - i; j++) {
