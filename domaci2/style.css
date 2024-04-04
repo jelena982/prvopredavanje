@@ -62,14 +62,14 @@ body {
 }
 
 .opis {
-  margin-top: 5px; /* Opciono: Dodajte razmak između slike i opisa */
+  margin-top: 5px;
   font-size: 10px;
   text-align: center;
   font-weight: bold;
 }
 
 .flex1 {
-  flex: 1; /* Opciono: Ovo će istegnuti drugi dio sadržaja kako bi popunio preostali prostor */
+  flex: 1;
 }
 
 .strong {
