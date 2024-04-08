@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Photography blog-Sing in form</title>
+    <link rel="stylesheet" href="singin.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav padding-nav">
+        <img alt="logo" src="./images/logo-brown.png" />
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+          <li><a href="./singin.html">Sing in</a></li>
+          <li><a href="./register.html">Register</a></li>
+        </ul>
+      </nav>
+      <div class="bgimage">
+        <div class="pozadina">
+          <h2>Sing in</h2>
+          <p>
+            Dont have an accoun?<span
+              ><a href="register.html">Register now</a></span
+            >
+          </p>
+          <form class="forma">
+            <div class="username">
+              <label for="username">Username:</label>
+              <input type="username" id="username" name="username" required />
+            </div>
+            <div class="password">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" required />
+            </div>
+            <div class="dugme">
+              <button type="submit">Sign In</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <footer class="footer">
+        <div class="flex">
+          <div class="slikaitekst">
+            <img src="images/logo.png" alt="logo" />
+            <p>
+              Our photography blog is powered by a dedicated team of passionate
+              photographers, talented writers, and tech enthusiasts - discover
+              more about us at our "About Us" section.
+            </p>
+          </div>
+          <div class="linkovi">
+            <p>Links:</p>
+            <a href="/">Home</a>
+            <a href="./about.html">About</a>
+            <a href="./contact.html">Contact</a>
+          </div>
+          <div class="followus">
+            <p>Follow us:</p>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+        </div>
+        <p class="copyrights">
+          &copy; 2024 Photography Blog. All rights reserved.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>

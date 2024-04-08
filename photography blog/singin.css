@@ -1,0 +1,266 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #3f2a19;
+}
+
+.container .paddingnav {
+  padding: 16px 10%;
+}
+
+.container .nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background-color: #472f1d7c;
+  border-bottom: 1px solid #472f1d7c;
+  padding: 10px 0;
+}
+
+.container .nav img {
+  height: 50px;
+}
+
+.container .nav ul {
+  list-style-type: none;
+}
+
+.container .nav ul li {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.container .nav ul li:last-child {
+  margin-right: 0;
+}
+
+.container .nav ul li a {
+  padding: 4px 8px;
+  color: #472f1d;
+  text-decoration: none;
+}
+.container .nav ul li a:hover {
+  border-bottom: 1px solid #472f1d;
+}
+
+.bgimage h2 {
+  padding-top: 30px;
+  margin-bottom: 5px;
+}
+
+.bgimage p {
+  margin-bottom: 30px;
+}
+
+.bgimage {
+  height: 450px;
+  background-image: url("../images/bg-login.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding-top: 0;
+  position: relative;
+}
+.forma {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin: 0 auto;
+}
+
+.pozadina {
+  background-color: rgba(255, 255, 255, 0.514);
+  height: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  border-radius: 10px;
+  color: #3f2a19;
+}
+
+.username {
+  display: flex;
+  flex-direction: column;
+}
+.username label {
+  margin-bottom: 6px;
+}
+
+.username input {
+  width: 400px;
+  height: 35px;
+  margin-bottom: 10px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.password {
+  display: flex;
+  flex-direction: column;
+}
+.password label {
+  margin-bottom: 6px;
+}
+
+.password input {
+  width: 400px;
+  height: 35px;
+  margin-bottom: 10px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.dugme button[type="submit"] {
+  width: 400px;
+  height: 35px;
+  background-color: #472f1d;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+}
+
+.bgimage p span {
+  margin-left: 5px;
+}
+
+.bgimage p span a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.footer {
+  border-top: 2px solid black;
+  padding-top: 15px;
+  padding-left: 70px;
+  padding-right: 50px;
+  height: auto;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.slikaitekst {
+  flex-basis: 50%;
+  align-items: flex-start;
+}
+
+.slikaitekst img {
+  width: 100px;
+  margin-bottom: 0;
+}
+
+.linkovi {
+  display: flex;
+  flex-direction: column;
+}
+.linkovi a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.copyrights {
+  margin-top: 15px;
+  text-align: center;
+  color: #a2a2a2;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .container .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 375px; */
+  }
+  .container .nav img {
+    margin-bottom: 16px;
+  }
+
+  .container .nav ul li {
+    margin: 0;
+    display: block;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .username input {
+    width: 200px;
+  }
+
+  .password input {
+    width: 200px;
+  }
+
+  .dugme button[type="submit"] {
+    width: 200px;
+  }
+
+  .pozadina {
+    width: 270px;
+  }
+
+  .footer .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slikaitekst img {
+    width: 150px;
+    align-self: center;
+    margin-left: 50px;
+    margin-bottom: 5px;
+  }
+
+  .slikaitekst p {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+
+  .linkovi p {
+    margin-bottom: 20px;
+  }
+
+  .linkovi a {
+    margin-bottom: 2px;
+  }
+
+  .linkovi {
+    margin-bottom: 25px;
+  }
+
+  .followus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .followus i {
+    margin-bottom: 5px;
+  }
+
+  .copyrights {
+    margin: 0;
+  }
+}

@@ -1,0 +1,509 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #472f1d;
+}
+
+.container {
+  /* width: 1350px; */
+}
+.container .paddingnav {
+  padding: 16px 10%;
+}
+
+.container .nav {
+  display: flex;
+  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background-color: #472f1d7c;
+  border-bottom: 1px solid #472f1d7c;
+  padding: 10px 0;
+}
+
+.container .nav img {
+  height: 50px;
+  /* margin-left: 100px; */
+}
+
+.container .nav ul {
+  list-style-type: none;
+  /* margin-right: 100px; */
+}
+
+.container .nav ul li {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.container .nav ul li:last-child {
+  margin-right: 0;
+}
+
+.container .nav ul li a {
+  padding: 4px 8px;
+  color: #472f1d;
+  text-decoration: none;
+}
+.container .nav ul li a:hover {
+  border-bottom: 1px solid #472f1d;
+}
+
+.prvasekcija {
+  display: flex;
+
+  margin-top: 70px;
+  gap: 30px;
+}
+
+.prvasekcija .jedan img {
+  width: 400px;
+  margin-left: 120px;
+}
+
+.prvasekcija .dva {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.prvasekcija .dva p {
+  line-height: 22px;
+  text-align: justify;
+  max-width: 600px;
+}
+
+.prvasekcija .dva h2 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.prvasekcija .dva button {
+  margin-top: 53px;
+  width: 110px;
+  height: 40px;
+  border-radius: 40px;
+  color: #3f2a19;
+  background-color: #472f1d7c;
+  border: 1px solid #472f1d;
+  font-weight: bold;
+}
+
+.prvasekcija .dva button:hover {
+  margin-top: 53px;
+  width: 110px;
+  height: 40px;
+  border-radius: 40px;
+  columns: #fff;
+  background-color: #3f2a19;
+  border: none;
+  font-weight: bold;
+}
+
+.prvasekcija .dva button a {
+  color: #3f2a19;
+  text-decoration: none;
+}
+.prvasekcija .dva button a:hover {
+  color: #fff;
+}
+
+.drugasekcija {
+  display: flex;
+  margin-top: 70px;
+  background-color: #472f1d7c;
+  /* height: 365px; */
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.drugasekcija .tri {
+  /* margin-left: 120px; */
+}
+.drugasekcija .cetiri img {
+  width: 400px;
+  /* margin-right: 120px; */
+  padding-top: 20px;
+}
+
+.drugasekcija .tri p {
+  line-height: 22px;
+  text-align: justify;
+  max-width: 600px;
+}
+
+.drugasekcija .tri h2 {
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.drugasekcija .tri button {
+  margin-top: 53px;
+  width: 110px;
+  height: 40px;
+  border-radius: 15px;
+  color: #3f2a19;
+  background-color: transparent;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+.drugasekcija .tri button:hover {
+  margin-top: 53px;
+  width: 110px;
+  height: 40px;
+  border-radius: 15px;
+  color: #fff;
+  background-color: #3f2a19;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+.drugasekcija .tri button a {
+  color: #3f2a19;
+  text-decoration: none;
+}
+
+.drugasekcija .tri button a:hover {
+  color: #fff;
+}
+
+.trecasekcija {
+  /* height: 400px; */
+  padding-bottom: 30px;
+}
+
+.trecasekcija .tekst {
+  text-align: center;
+  margin-top: 70px;
+}
+
+.tekst h2 {
+  margin-bottom: 20px;
+}
+.tekst p {
+  font-weight: 600;
+}
+
+.kartice {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.prvakartica,
+.drugakartica,
+.trecakartica {
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 220px;
+  width: 150px;
+  border-radius: 10px;
+}
+
+.prvakartica:hover,
+.drugakartica:hover,
+.trecakartica:hover {
+  transform: scale(1.1);
+}
+
+.prvakartica img {
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid black;
+  align-self: center;
+}
+
+.drugakartica img {
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.trecakartica img {
+  width: 100px;
+  border-radius: 50%;
+  border: 2px solid black;
+}
+
+.tekstUkartici {
+  text-align: center;
+}
+
+.prvakartica h3,
+.drugakartica h3,
+.trecakartica h3 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.email {
+  color: #bba6a6;
+}
+/*footer*/
+
+.footer {
+  border-top: 2px solid black;
+  padding-top: 15px;
+  padding-left: 70px;
+  padding-right: 50px;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.slikaitekst {
+  flex-basis: 50%;
+  align-items: flex-start;
+}
+
+.slikaitekst img {
+  width: 100px;
+}
+
+.linkovi {
+  display: flex;
+  flex-direction: column;
+}
+.linkovi a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.copyrights {
+  text-align: center;
+  color: #a2a2a2;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .container .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* width: 375px; */
+  }
+  .container .nav img {
+    margin-bottom: 16px;
+  }
+
+  .container .nav ul li {
+    margin: 0;
+    display: block;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .container .prvasekcija {
+    /* width: 375px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .prvasekcija .jedan img {
+    width: 300px;
+    margin: 0;
+    align-self: center;
+    justify-self: center;
+  }
+  .prvasekcija .dva h2 {
+    width: 150px;
+    margin-right: 25px;
+    font-weight: bold;
+    font-size: 25px;
+  }
+
+  .prvasekcija .dva p {
+    margin-right: 25px;
+    margin-left: 25px;
+    font-size: 25px;
+    line-height: 1.5;
+  }
+
+  .prvasekcija .dva button {
+    margin-right: 25px;
+    width: 150px;
+    height: 50px;
+    font-size: 17px;
+    border-radius: 40px;
+  }
+  .prvasekcija .dva button:hover {
+    margin-top: 53px;
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    background-color: #3f2a19;
+    border: none;
+    font-weight: bold;
+  }
+
+  .container .drugasekcija {
+    /* width: 375px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .drugasekcija .cetiri img {
+    width: 300px;
+    margin: 0;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .drugasekcija .tri p {
+    margin-right: 25px;
+    margin-left: 25px;
+    font-size: 25px;
+    line-height: 1.5;
+  }
+
+  .drugasekcija .tri h2 {
+    font-size: 25px;
+    margin-left: 25px;
+  }
+  .drugasekcija .tri button {
+    margin-left: 25px;
+    width: 150px;
+    height: 50px;
+    font-size: 19px;
+    border-radius: 40px;
+  }
+
+  .drugasekcija .tri button:hover {
+    margin-top: 53px;
+    width: 150px;
+    height: 50px;
+    border-radius: 40px;
+    color: #fff;
+    background-color: #3f2a19;
+    border: 1px solid black;
+    font-weight: bold;
+  }
+
+  .trecasekcija {
+    /* width: 375px; */
+  }
+
+  .trecasekcija .tekst {
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 19px;
+  }
+
+  .trecasekcija .tekst h2 {
+    font-size: 30px;
+    font-weight: bolder;
+  }
+
+  .trecasekcija .tekst p {
+    font-weight: normal;
+  }
+
+  .trecasekcija .kartice {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .prvakartica,
+  .drugakartica,
+  .trecakartica {
+    width: 220px;
+    height: 300px;
+  }
+
+  .prvakartica img,
+  .drugakartica img,
+  .trecakartica img {
+    width: 170px;
+    border-radius: 50%;
+    border: 2px solid black;
+  }
+
+  .prvakartica h3,
+  .drugakartica h3,
+  .trecakartica h3 {
+    font-size: 30px;
+  }
+
+  .prvakartica p,
+  .drugakartica p,
+  .trecakartica p {
+    margin-top: 10px;
+    margin-bottom: 7px;
+    font-size: 18px;
+  }
+
+  .footer {
+    /* width: 375px; */
+  }
+
+  .footer .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slikaitekst img {
+    width: 150px;
+    align-self: center;
+    margin-left: 50px;
+    margin-bottom: 5px;
+  }
+
+  .slikaitekst p {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+
+  .linkovi p {
+    margin-bottom: 20px;
+  }
+
+  .linkovi a {
+    margin-bottom: 2px;
+  }
+
+  .linkovi {
+    margin-bottom: 25px;
+  }
+
+  .followus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .followus i {
+    margin-bottom: 5px;
+  }
+
+  .copyrights {
+    margin: 0;
+  }
+}

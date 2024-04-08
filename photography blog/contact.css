@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #3f2a19;
+}
+
+.container {
+  /* width: 100%;
+  max-width: 1350px; */
+  margin: 0 auto;
+}
+.container .paddingnav {
+  padding: 16px 10%;
+}
+
+.container .nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background-color: #472f1d7c;
+  border-bottom: 1px solid #472f1d7c;
+  padding: 10px 0;
+}
+
+.container .nav img {
+  height: 50px;
+  /* margin-left: 100px; */
+}
+
+.container .nav ul {
+  list-style-type: none;
+  /* margin-right: 100px; */
+}
+
+.container .nav ul li {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.container .nav ul li:last-child {
+  margin-right: 0;
+}
+
+.container .nav ul li a {
+  padding: 4px 8px;
+  color: #472f1d;
+  text-decoration: none;
+}
+.container .nav ul li a:hover {
+  border-bottom: 1px solid #472f1d;
+}
+
+.prijava {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.tekst h1 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.tekst p {
+  margin-bottom: 40px;
+}
+
+.name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.name label {
+  justify-self: flex-start;
+  align-self: flex-start;
+  margin-left: 4px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.name input {
+  width: 500px;
+  height: 35px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email label {
+  justify-self: flex-start;
+  align-self: flex-start;
+  margin-left: 4px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.email input {
+  width: 500px;
+  height: 35px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.message label {
+  justify-self: flex-start;
+  align-self: flex-start;
+  margin-left: 3px;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.message textarea {
+  width: 500px;
+  height: 35px;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.submit input[type="submit"] {
+  width: 500px;
+  height: 35px;
+  background-color: #472f1d7c;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  border-radius: 10px;
+  border: none;
+}
+
+.footer {
+  border-top: 2px solid black;
+  padding-top: 15px;
+  padding-left: 70px;
+  padding-right: 50px;
+  height: auto;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.slikaitekst {
+  flex-basis: 50%;
+  align-items: flex-start;
+}
+
+.slikaitekst img {
+  width: 100px;
+  margin-bottom: 0;
+}
+
+.linkovi {
+  display: flex;
+  flex-direction: column;
+}
+.linkovi a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.copyrights {
+  margin-top: 15px;
+  text-align: center;
+  color: #a2a2a2;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .container .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 375px; */
+  }
+  .container .nav img {
+    margin-bottom: 16px;
+  }
+
+  .container .nav ul li {
+    margin: 0;
+    display: block;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .name input {
+    width: 300px;
+    height: 45px;
+  }
+
+  .email input {
+    width: 300px;
+    height: 45px;
+  }
+  .message textarea {
+    width: 300px;
+    height: 90px;
+  }
+
+  .submit input[type="submit"] {
+    width: 300px;
+    height: 45px;
+    margin-top: 30px;
+    border: 1px solid black;
+  }
+
+  .tekst p {
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+
+  .footer .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slikaitekst img {
+    width: 150px;
+    align-self: center;
+    margin-left: 50px;
+    margin-bottom: 5px;
+  }
+
+  .slikaitekst p {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+
+  .linkovi p {
+    margin-bottom: 20px;
+  }
+
+  .linkovi a {
+    margin-bottom: 2px;
+  }
+
+  .linkovi {
+    margin-bottom: 25px;
+  }
+
+  .followus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .followus i {
+    margin-bottom: 5px;
+  }
+
+  .copyrights {
+    margin: 0;
+  }
+}

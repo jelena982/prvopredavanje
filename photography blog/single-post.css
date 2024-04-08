@@ -1,0 +1,263 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #3f2a19;
+}
+
+.container .paddingnav {
+  padding: 16px 10%;
+}
+
+.container .nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background-color: #472f1d7c;
+  border-bottom: 1px solid #472f1d7c;
+  padding: 10px 0;
+}
+
+.container .nav img {
+  height: 50px;
+}
+
+.container .nav ul {
+  list-style-type: none;
+}
+
+.container .nav ul li {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.container .nav ul li:last-child {
+  margin-right: 0;
+}
+
+.container .nav ul li a {
+  padding: 4px 8px;
+  color: #472f1d;
+  text-decoration: none;
+}
+.container .nav ul li a:hover {
+  border-bottom: 1px solid #472f1d;
+}
+
+.flex {
+  display: flex;
+  gap: 20px;
+}
+
+/* .tekst {
+  max-width: 900px;
+} */
+
+.flex img {
+  width: 230px;
+  height: 320px;
+  margin-left: 80px;
+  margin-top: 30px;
+}
+
+.paragraf {
+  background-color: #b49c8b7c;
+  line-height: 1.5;
+  /* height: 350px; */
+  width: 900px;
+  /* margin-right: 150px; */
+  border-radius: 10px;
+  border: 1px solid grey;
+  margin-bottom: 60px;
+  text-indent: 32px;
+}
+
+.paragraf::first-letter {
+  font-size: 200%;
+}
+
+.naslov {
+  display: flex;
+  flex-direction: column;
+}
+
+.tekst h1 {
+  border-bottom: 1px solid black;
+  margin-top: 20px;
+  padding-bottom: 5px;
+}
+
+.tekst span {
+  display: inline-block;
+  padding-top: 5px;
+  align-self: flex-end;
+  /* margin-left: 730px; */
+  font-size: 13px;
+  padding-bottom: 10px;
+  color: rgb(180, 180, 180);
+}
+
+.slika p {
+  text-align: center;
+  font-size: 16px;
+  margin-left: 70px;
+}
+.slika img {
+  border-radius: 10px;
+  border: 1px solid rgb(168, 168, 168);
+  padding: 5px;
+}
+
+.padding-footer {
+  padding: 16px 10%;
+}
+
+.footer {
+  border-top: 1px solid #000;
+  background-color: #fff;
+}
+
+.footer div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 14px;
+  color: #a2a2a2;
+  font-weight: 200;
+  margin: 0;
+  background-color: #f2f2f2;
+  height: 10px;
+  text-align: center;
+}
+
+.logo {
+  width: 50%;
+  font-size: 14px;
+}
+.footer .footer-col {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer .footer-col p {
+  margin-bottom: 16px;
+}
+
+.footer .footer-col i {
+  margin-right: 8px;
+}
+
+.footer .logo img {
+  width: 120px;
+}
+
+.footer .copyright {
+  padding: 18px 10%;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .container .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 375px; */
+  }
+  .container .nav img {
+    margin-bottom: 16px;
+  }
+
+  .container .nav ul li {
+    margin: 0;
+    display: block;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .flex {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex img {
+    margin: 0;
+    width: 320px;
+    height: 450px;
+    margin-top: 10px;
+  }
+
+  .slika p {
+    margin: 0;
+  }
+
+  .paragraf {
+    width: 300px;
+  }
+
+  .naslov h1 {
+    font-size: 35px;
+    word-spacing: 5px;
+    padding-left: 50px;
+    padding-right: 50px;
+    align-self: center;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;
+  }
+
+  .naslov span {
+    font-size: 18px;
+    font-style: italic;
+  }
+
+  .paragraf {
+    font-size: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* text-indent: 32px; */
+    text-align: justify;
+  }
+  .footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .footer-logo p {
+    text-align: center;
+  }
+
+  .footer .footer-col {
+    margin-bottom: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer .footer-col p {
+    margin-bottom: 16px;
+  }
+
+  .footer .footer-col i {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+}

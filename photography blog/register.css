@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #3f2a19;
+}
+
+.container .paddingnav {
+  padding: 16px 10%;
+}
+
+.container .nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  background-color: #472f1d7c;
+  border-bottom: 1px solid #472f1d7c;
+  padding: 10px 0;
+}
+
+.container .nav img {
+  height: 50px;
+}
+
+.container .nav ul {
+  list-style-type: none;
+}
+
+.container .nav ul li {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.container .nav ul li:last-child {
+  margin-right: 0;
+}
+
+.container .nav ul li a {
+  padding: 4px 8px;
+  color: #472f1d;
+  text-decoration: none;
+}
+.container .nav ul li a:hover {
+  border-bottom: 1px solid #472f1d;
+}
+
+.sve {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 25px;
+}
+
+.sve img {
+  border-radius: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  flex: 50%;
+  width: 500px;
+  height: 450px;
+  margin-left: 10px;
+}
+
+/* .register-form {
+  width: 500px;
+} */
+.register-form h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  /* margin-right: 100px; */
+}
+.register-form p {
+  text-align: center;
+  margin-bottom: 50px;
+  /* margin-right: 100px; */
+}
+.ime {
+  display: flex;
+  flex-direction: column;
+}
+.ime label {
+  margin-bottom: 6px;
+}
+
+.ime input {
+  width: 400px;
+  height: 35px;
+  margin-bottom: 10px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.prezime {
+  display: flex;
+  flex-direction: column;
+}
+.prezime label {
+  margin-bottom: 6px;
+}
+
+.prezime input {
+  width: 400px;
+  height: 35px;
+  margin-bottom: 10px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.email {
+  display: flex;
+  flex-direction: column;
+}
+.email label {
+  margin-bottom: 6px;
+}
+
+.email input {
+  width: 400px;
+  height: 35px;
+  margin-bottom: 10px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.password {
+  display: flex;
+  flex-direction: column;
+}
+.password label {
+  margin-bottom: 6px;
+}
+
+.password input {
+  width: 400px;
+  height: 35px;
+  margin-bottom: 10px;
+  border: 1px solid grey;
+  border-radius: 10px;
+}
+
+.dugme button[type="submit"] {
+  width: 400px;
+  height: 35px;
+  background-color: #472f1d;
+  margin-top: 20px;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+}
+
+.footer {
+  border-top: 2px solid black;
+  padding-top: 15px;
+  padding-left: 70px;
+  padding-right: 50px;
+}
+.flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.slikaitekst {
+  flex-basis: 50%;
+  align-items: flex-start;
+}
+
+.slikaitekst img {
+  width: 100px;
+}
+
+.linkovi {
+  display: flex;
+  flex-direction: column;
+}
+.linkovi a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.copyrights {
+  text-align: center;
+  color: #a2a2a2;
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .container .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 375px; */
+  }
+  .container .nav img {
+    margin-bottom: 16px;
+  }
+
+  .container .nav ul li {
+    margin: 0;
+    display: block;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+
+  .sve img {
+    display: none;
+  }
+
+  .register-form {
+    width: 280px;
+  }
+
+  .ime input,
+  .prezime input,
+  .email input,
+  .password input {
+    width: 280px;
+  }
+
+  .dugme button[type="submit"] {
+    width: 280px;
+    margin-bottom: 30px;
+  }
+  .sve {
+    gap: 0;
+  }
+
+  .footer .flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slikaitekst img {
+    width: 150px;
+    align-self: center;
+    margin-left: 50px;
+    margin-bottom: 5px;
+  }
+
+  .slikaitekst p {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+
+  .linkovi p {
+    margin-bottom: 20px;
+  }
+
+  .linkovi a {
+    margin-bottom: 2px;
+  }
+
+  .linkovi {
+    margin-bottom: 25px;
+  }
+
+  .followus {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .followus i {
+    margin-bottom: 5px;
+  }
+
+  .copyrights {
+    margin: 0;
+  }
+}
